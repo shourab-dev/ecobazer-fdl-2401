@@ -103,7 +103,9 @@
                 <div class="smMenu d-lg-none">
                     <div class="row align-items-center">
                         <div class="col text-center">
-                            <span class="iconify-icon"><iconify-icon icon="tabler:align-left"></iconify-icon></span>
+                            <a data-bs-toggle="offcanvas" role="button" href="#menuSidebar" class="text-dark"><span
+                                    class="iconify-icon"><iconify-icon
+                                        icon="tabler:align-left"></iconify-icon></span></a>
                         </div>
                         <div class="col-6">
                             <div class="logo">
@@ -111,14 +113,190 @@
                             </div>
                         </div>
                         <div class="col text-center">
-                            <span class="iconify-icon"><iconify-icon icon="iconoir:search"></iconify-icon></span>
+                            <button id="smSearchBtn"><span class="iconify-icon"><iconify-icon
+                                        icon="iconoir:search"></iconify-icon></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas menuSidebar offcanvas-start" tabindex="-1" id="menuSidebar"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                        <a href="#"><img src="./images/Logo.png" alt=""></a>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Category
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Home</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <!-- search in sm -->
+            <div class="searchSm">
+                <form>
+                    <button type="button" class="closeBtn"><iconify-icon icon="iconoir:cancel" width="24"
+                            height="24"></iconify-icon></button>
+                    <div class="form-group">
+                        <input type="search" placeholder="Search here...">
+                        <span class="iconify-icon"><iconify-icon icon="mynaui:search" width="24"
+                                height="24"></iconify-icon></span>
+                    </div>
+                </form>
+
+                <div class="searchResult">
+                    <p class="result"> total results 250</p>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="product_card">
+                                <div class="product_img">
+                                    <a href="#">
+                                        <img src="./images/product.png" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="product_text">
+                                    <p>Green Apple</p>
+                                    <h4>$14.99 <del>$20.99</del></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="product_card">
+                                <div class="product_img">
+                                    <a href="#">
+                                        <img src="./images/product.png" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="product_text">
+                                    <p>Green Apple</p>
+                                    <h4>$14.99 <del>$20.99</del></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="product_card">
+                                <div class="product_img">
+                                    <a href="#">
+                                        <img src="./images/product.png" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="product_text">
+                                    <p>Green Apple</p>
+                                    <h4>$14.99 <del>$20.99</del></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="product_card">
+                                <div class="product_img">
+                                    <a href="#">
+                                        <img src="./images/product.png" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="product_text">
+                                    <p>Green Apple</p>
+                                    <h4>$14.99 <del>$20.99</del></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <!-- search in sm ends -->
+
+
+        </section>
+        <!-- Header Middle SECTION ENDS -->
+
+
+        <!-- Header Bottom SECTION -->
+        <section id="headerBottom" class="d-none d-lg-block">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-10">
+                        <ul class="d-flex align-items-center">
+                            <li>
+                                <div class="dropdown">
+                                    <button class="categoryBtn d-flex align-items-center" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="menuIcon iconify-icon">
+                                            <iconify-icon icon="material-symbols-light:menu" width="24"
+                                                height="24"></iconify-icon>
+                                        </span>
+                                        All Categories
+                                        <span class="arrow iconify-icon">
+                                            <iconify-icon icon="iconamoon:arrow-down-2-thin" width="24"
+                                                height="24"></iconify-icon>
+                                        </span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="active">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Shop</a>
+                            </li>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 text-end ">
+                        <div class="d-flex phoneNumber">
+                            <span class="iconify-icon"><iconify-icon icon="mage:phone-call" width="24"
+                                    height="24"></iconify-icon></span>
+                            <a href="tel:219555-0114">(219) 555-0114</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Header Middle SECTION ENDS -->
+        <!-- Header Bottom SECTION ENDS -->
 
+        <!-- Mobile bottom Header -->
+        <section id="mobileBottomHeader" class="d-lg-none">
+            <div class="container">
+                <div class="d-flex justify-content-evenly">
+                    <a href="#" class=" active iconify-icon"><iconify-icon icon="si:home-duotone" width="24" height="24"></iconify-icon></a>
+                    <a href="#" class="iconify-icon"><iconify-icon icon="iconoir:shop" width="24" height="24"></iconify-icon></a>
+                    <a href="#" class="iconify-icon"><iconify-icon icon="iconamoon:heart-light" width="24" height="24"></iconify-icon></a>
+                    <a href="#" class="iconify-icon"><iconify-icon icon="solar:user-linear" width="24" height="24"></iconify-icon></a>
+                </div>
+            </div>
+
+        </section>
+        <!-- Mobile bottom Header end -->
 
     </header>
     <!-- Header ends -->
